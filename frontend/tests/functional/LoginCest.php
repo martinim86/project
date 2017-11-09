@@ -35,7 +35,7 @@ class LoginCest
 
     public function checkWrongPassword(FunctionalTester $I)
     {
-        $I->submitForm('#login-form', $this->formParams('admin', 'wrong'));
+        $I->submitForm('#login-form', $this->formParams('admin2', 'wrong'));
         $I->seeValidationError('Incorrect username or password.');
     }
     

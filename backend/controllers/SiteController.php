@@ -26,6 +26,10 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
+                        'actions' => ['index', 'error'],
+                        'allow' => true,
+                    ],
+                    [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
@@ -95,4 +99,6 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+    
+   
 }

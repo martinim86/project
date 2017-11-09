@@ -49,6 +49,9 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+        $menuItems[] = ['label' => 'Посты', 'url' => ['/posting']];
+        $menuItems[] = ['label' => 'Комментарии', 'url' => ['/comments']];
+        $menuItems[] = ['label' => 'Тэги', 'url' => ['/tags']];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
